@@ -1,0 +1,53 @@
+/* Global styles with Tailwind 4 and custom design tokens */
+
+@import 'tailwindcss';
+
+/* ── Custom Design Tokens ─────────────────────────────────────────────────── */
+:root {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  color-scheme: dark;
+}
+
+/* ── Base Styles ──────────────────────────────────────────────────────────── */
+html, body {
+  @apply bg-slate-950 text-white antialiased;
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+}
+
+/* ── Scrollbar Styling ────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ── Focus ring utility ───────────────────────────────────────────────────── */
+*:focus-visible {
+  @apply outline-none ring-2 ring-purple-500/50 ring-offset-2 ring-offset-slate-900;
+}
+
+/* ── Selection ────────────────────────────────────────────────────────────── */
+::selection {
+  @apply bg-purple-500/30 text-white;
+}
+
+/* ── Line clamp utility ──────────────────────────────────────────────────── */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
