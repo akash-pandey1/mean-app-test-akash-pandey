@@ -34,6 +34,10 @@ frontend/
    ```bash
    npm run dev
    ```
+5. Run backend tests:
+   ```bash
+   npm test
+   ```
 
 ### Frontend
 1. Install dependencies:

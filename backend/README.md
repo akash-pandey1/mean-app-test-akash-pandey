@@ -19,6 +19,13 @@ This backend is a production-ready Express API that integrates:
    npm run dev
    ```
 
+## Testing
+
+Run backend unit tests with:
+```bash
+npm test
+```
+
 ## Required environment variables
 
 ```env
