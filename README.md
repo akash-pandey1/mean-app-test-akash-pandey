@@ -1,5 +1,9 @@
 # MEAN Stack Application
 
+**Author:** Akash Pandey
+
+**Contact:** akashdeep9226@gmail.com
+
 This repository contains a complete MEAN stack application with:
 
 - **Angular 20 frontend** (SSR-ready, Tailwind CSS)

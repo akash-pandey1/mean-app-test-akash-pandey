@@ -4,6 +4,7 @@
   "description": "MEAN Stack MVC Backend with MongoDB and MySQL",
   "main": "server.js",
   "type": "module",
+  "author": "Akash Pandey <akashdeep9226@gmail.com>",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
